@@ -1,7 +1,7 @@
 <div>
   <h3><%= @user.name %></h3>
   <%= image_tag @user.get_profile_image("100x100") %>
-  <p><%= link_to "プロフィール編集", @user %></p>
+  <p><%= link_to "プロフィール編集", users_edit_path(params[:id]) %></p>
 </div>
 
 <% @post_images.each do |post_image| %>

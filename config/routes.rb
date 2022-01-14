@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'users/show'
-  get 'users/edit'
+  get 'users/edit' 
   root to: "homes#top"
   devise_for :users
 
